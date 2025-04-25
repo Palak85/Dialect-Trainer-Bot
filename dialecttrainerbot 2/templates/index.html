@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialect Trainer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+            <h1 class="text-3xl font-bold">Dialect Trainer</h1>
+            <div class="header-buttons">
+                <button class="enrolled-courses-btn">
+                    <i class="fas fa-book mr-2"></i>My Courses
+                </button>
+                <button class="logout-btn">
+                    <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- Current Progress Section -->
+        <div class="current-progress">
+            <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-bold">Your Current Progress</h2>
+                <div class="progress-text">0% Complete</div>
+            </div>
+            <div class="progress-bar mt-4">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <h3 class="language-selection-heading">Select Your Language</h3>
+        
+        <!-- Language Selection Grid -->
+        <div class="language-grid">
+            <button class="btn language-btn" data-lang="en">
+                <i class="fas fa-globe-americas"></i>
+                <span>English</span>
+            </button>
+            <button class="btn language-btn" data-lang="hi">
+                <i class="fas fa-globe-asia"></i>
+                <span>Hindi</span>
+            </button>
+            <button class="btn language-btn" data-lang="es">
+                <i class="fas fa-globe-europe"></i>
+                <span>Spanish</span>
+            </button>
+            <button class="btn language-btn" data-lang="de">
+                <i class="fas fa-globe-europe"></i>
+                <span>German</span>
+            </button>
+            <button class="btn language-btn" data-lang="fr">
+                <i class="fas fa-globe-europe"></i>
+                <span>French</span>
+            </button>
+            <button class="btn language-btn" data-lang="ar">
+                <i class="fas fa-globe-africa"></i>
+                <span>Arabic</span>
+            </button>
+        </div>
+
+        <!-- Level Selection Section -->
+        <div class="level-container hidden" id="level-section">
+            <h2 class="level-title">Select Your Level</h2>
+            <div class="level-buttons">
+                <button class="btn btn-primary level-btn" data-level="beginner">
+                    <i class="fas fa-seedling mr-2"></i>Beginner
+                </button>
+                <button class="btn btn-primary level-btn" data-level="intermediate">
+                    <i class="fas fa-leaf mr-2"></i>Intermediate
+                </button>
+                <button class="btn btn-primary level-btn" data-level="advanced">
+                    <i class="fas fa-tree mr-2"></i>Advanced
+                </button>
+            </div>
+        </div>
+
+        <!-- Word Display Section -->
+        <div class="word-container hidden" id="word-section">
+            <div class="word-display">
+                <h2 class="word-text" id="current-word">Word</h2>
+                <div class="word-info">
+                    <p class="pronunciation" id="pronunciation">Pronunciation</p>
+                    <p class="meaning" id="meaning">Meaning</p>
+                </div>
+            </div>
+            <div class="recording-controls">
+                <button class="btn record-btn" id="record-btn">
+                    <i class="fas fa-microphone"></i>
+                    <span>Record</span>
+                </button>
+                <div class="recording-status hidden" id="recording-status">
+                    <div class="recording-indicator"></div>
+                    <span>Recording...</span>
+                </div>
+            </div>
+            <div class="feedback-container hidden" id="feedback-container">
+                <div class="feedback-message" id="feedback-message"></div>
+                <div class="accuracy-bar">
+                    <div class="accuracy-fill" id="accuracy-fill"></div>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="btn prev-btn" id="prev-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Previous</span>
+                </button>
+                <button class="btn next-btn" id="next-btn">
+                    <span>Next</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Enrolled Courses Section -->
+        <div class="enrolled-courses hidden" id="enrolled-courses">
+            <div class="enrolled-courses-header">
+                <button class="back-btn" id="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back</span>
+                </button>
+                <h2>My Courses</h2>
+            </div>
+            <div class="courses-list" id="courses-list">
+                <!-- Course cards will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 

@@ -1,0 +1,612 @@
+{
+    "languages": [
+        {
+            "code": "en",
+            "name": "English"
+        },
+        {
+            "code": "hi",
+            "name": "Hindi"
+        },
+        {
+            "code": "es",
+            "name": "Spanish"
+        },
+        {
+            "code": "de",
+            "name": "German"
+        },
+        {
+            "code": "fr",
+            "name": "French"
+        },
+        {
+            "code": "ar",
+            "name": "Arabic"
+        }
+    ],
+    "levels": {
+        "beginner": {
+            "en": [
+                {
+                    "text": "Hello",
+                    "pronunciation": "/həˈləʊ/",
+                    "meaning": "A greeting",
+                    "example": "Hello, how are you today?"
+                },
+                {
+                    "text": "Good morning",
+                    "pronunciation": "/ɡʊd ˈmɔːnɪŋ/",
+                    "meaning": "Morning greeting",
+                    "example": "Good morning, did you sleep well?"
+                },
+                {
+                    "text": "Thank you",
+                    "pronunciation": "/ˈθæŋk juː/",
+                    "meaning": "Expression of gratitude",
+                    "example": "Thank you for your help!"
+                },
+                {
+                    "text": "Please",
+                    "pronunciation": "/pliːz/",
+                    "meaning": "Polite request",
+                    "example": "Please pass the salt."
+                },
+                {
+                    "text": "Goodbye",
+                    "pronunciation": "/ɡʊdˈbaɪ/",
+                    "meaning": "Farewell",
+                    "example": "Goodbye, see you tomorrow!"
+                }
+            ],
+            "es": [
+                {
+                    "text": "Hola",
+                    "pronunciation": "/ˈola/",
+                    "meaning": "Hello",
+                    "example": "Hola, ¿cómo estás?"
+                },
+                {
+                    "text": "Buenos días",
+                    "pronunciation": "/ˈbwenos ˈdias/",
+                    "meaning": "Good morning",
+                    "example": "Buenos días, ¿cómo amaneciste?"
+                },
+                {
+                    "text": "Gracias",
+                    "pronunciation": "/ˈɡɾaθjas/",
+                    "meaning": "Thank you",
+                    "example": "Gracias por tu ayuda!"
+                },
+                {
+                    "text": "Por favor",
+                    "pronunciation": "/poɾ faˈβoɾ/",
+                    "meaning": "Please",
+                    "example": "Por favor, pásame la sal."
+                },
+                {
+                    "text": "Adiós",
+                    "pronunciation": "/aˈðjos/",
+                    "meaning": "Goodbye",
+                    "example": "Adiós, hasta mañana!"
+                }
+            ],
+            "hi": [
+                {
+                    "text": "नमस्ते",
+                    "pronunciation": "/nəməsteː/",
+                    "meaning": "Hello",
+                    "example": "नमस्ते, आप कैसे हैं?"
+                },
+                {
+                    "text": "शुभ प्रभात",
+                    "pronunciation": "/ʃubʰ pɾəbʰaːt/",
+                    "meaning": "Good morning",
+                    "example": "शुभ प्रभात, क्या आपने अच्छी नींद ली?"
+                },
+                {
+                    "text": "धन्यवाद",
+                    "pronunciation": "/d̪ʰənjəvaːd̪/",
+                    "meaning": "Thank you",
+                    "example": "आपकी मदद के लिए धन्यवाद!"
+                },
+                {
+                    "text": "कृपया",
+                    "pronunciation": "/kɾɪpjaː/",
+                    "meaning": "Please",
+                    "example": "कृपया नमक पास करें।"
+                },
+                {
+                    "text": "अलविदा",
+                    "pronunciation": "/ələviːd̪aː/",
+                    "meaning": "Goodbye",
+                    "example": "अलविदा, कल मिलते हैं!"
+                }
+            ],
+            "de": [
+                {
+                    "text": "Hallo",
+                    "pronunciation": "/ˈhaloː/",
+                    "meaning": "Hello",
+                    "example": "Hallo, wie geht es dir?"
+                },
+                {
+                    "text": "Guten Morgen",
+                    "pronunciation": "/ˈɡuːtn̩ ˈmɔʁɡn̩/",
+                    "meaning": "Good morning",
+                    "example": "Guten Morgen, hast du gut geschlafen?"
+                },
+                {
+                    "text": "Danke",
+                    "pronunciation": "/ˈdaŋkə/",
+                    "meaning": "Thank you",
+                    "example": "Danke für deine Hilfe!"
+                },
+                {
+                    "text": "Bitte",
+                    "pronunciation": "/ˈbɪtə/",
+                    "meaning": "Please",
+                    "example": "Bitte reich mir das Salz."
+                },
+                {
+                    "text": "Auf Wiedersehen",
+                    "pronunciation": "/aʊf ˈviːdɐˌzeːən/",
+                    "meaning": "Goodbye",
+                    "example": "Auf Wiedersehen, bis morgen!"
+                }
+            ],
+            "fr": [
+                {
+                    "text": "Bonjour",
+                    "pronunciation": "/bɔ̃ʒuʁ/",
+                    "meaning": "Hello",
+                    "example": "Bonjour, comment allez-vous?"
+                },
+                {
+                    "text": "Bon matin",
+                    "pronunciation": "/bɔ̃ matɛ̃/",
+                    "meaning": "Good morning",
+                    "example": "Bon matin, avez-vous bien dormi?"
+                },
+                {
+                    "text": "Merci",
+                    "pronunciation": "/mɛʁsi/",
+                    "meaning": "Thank you",
+                    "example": "Merci pour votre aide!"
+                },
+                {
+                    "text": "S'il vous plaît",
+                    "pronunciation": "/sil vu plɛ/",
+                    "meaning": "Please",
+                    "example": "S'il vous plaît, passez-moi le sel."
+                },
+                {
+                    "text": "Au revoir",
+                    "pronunciation": "/o ʁəvwaʁ/",
+                    "meaning": "Goodbye",
+                    "example": "Au revoir, à demain!"
+                }
+            ],
+            "ar": [
+                {
+                    "text": "مرحبا",
+                    "pronunciation": "/marħaba/",
+                    "meaning": "Hello",
+                    "example": "مرحبا، كيف حالك؟"
+                },
+                {
+                    "text": "صباح الخير",
+                    "pronunciation": "/sˤabaːħ alxajr/",
+                    "meaning": "Good morning",
+                    "example": "صباح الخير، هل نمت جيداً؟"
+                },
+                {
+                    "text": "شكراً",
+                    "pronunciation": "/ʃukran/",
+                    "meaning": "Thank you",
+                    "example": "شكراً لمساعدتك!"
+                },
+                {
+                    "text": "من فضلك",
+                    "pronunciation": "/min faɖlik/",
+                    "meaning": "Please",
+                    "example": "من فضلك، مرر الملح."
+                },
+                {
+                    "text": "مع السلامة",
+                    "pronunciation": "/maʕa ssalaːma/",
+                    "meaning": "Goodbye",
+                    "example": "مع السلامة، أراك غداً!"
+                }
+            ]
+        },
+        "intermediate": {
+            "en": [
+                {
+                    "text": "How are you feeling today?",
+                    "pronunciation": "/haʊ ɑːr juː ˈfiːlɪŋ təˈdeɪ/",
+                    "meaning": "Asking about someone's well-being",
+                    "example": "How are you feeling today after your workout?"
+                },
+                {
+                    "text": "I would like to order",
+                    "pronunciation": "/aɪ wʊd laɪk tə ˈɔːdər/",
+                    "meaning": "Requesting to place an order",
+                    "example": "I would like to order a coffee, please."
+                },
+                {
+                    "text": "What time is it?",
+                    "pronunciation": "/wɒt taɪm ɪz ɪt/",
+                    "meaning": "Asking for the current time",
+                    "example": "Excuse me, what time is it?"
+                },
+                {
+                    "text": "Where is the nearest station?",
+                    "pronunciation": "/weər ɪz ðə ˈnɪərɪst ˈsteɪʃən/",
+                    "meaning": "Asking for directions",
+                    "example": "Could you tell me where is the nearest station?"
+                },
+                {
+                    "text": "I need some help",
+                    "pronunciation": "/aɪ niːd sʌm help/",
+                    "meaning": "Requesting assistance",
+                    "example": "I need some help with this problem."
+                }
+            ],
+            "es": [
+                {
+                    "text": "¿Cómo te sientes hoy?",
+                    "pronunciation": "/ˈkomo te ˈsjentes oi/",
+                    "meaning": "How are you feeling today?",
+                    "example": "¿Cómo te sientes hoy después del entrenamiento?"
+                },
+                {
+                    "text": "Me gustaría pedir",
+                    "pronunciation": "/me ɡustaˈɾia peˈðiɾ/",
+                    "meaning": "I would like to order",
+                    "example": "Me gustaría pedir un café, por favor."
+                },
+                {
+                    "text": "¿Qué hora es?",
+                    "pronunciation": "/ke ˈoɾa es/",
+                    "meaning": "What time is it?",
+                    "example": "Disculpe, ¿qué hora es?"
+                },
+                {
+                    "text": "¿Dónde está la estación más cercana?",
+                    "pronunciation": "/ˈdonde esˈta la estaˈθjon mas θeɾˈkana/",
+                    "meaning": "Where is the nearest station?",
+                    "example": "¿Podrías decirme dónde está la estación más cercana?"
+                },
+                {
+                    "text": "Necesito ayuda",
+                    "pronunciation": "/neθeˈsito aˈʝuða/",
+                    "meaning": "I need help",
+                    "example": "Necesito ayuda con este problema."
+                }
+            ],
+            "hi": [
+                {
+                    "text": "आज आप कैसा महसूस कर रहे हैं?",
+                    "pronunciation": "/aːdʒ aːp kɛsaː məɦsuːs kəɾ ɾəheː ɦɛ̃ː/",
+                    "meaning": "How are you feeling today?",
+                    "example": "वर्कआउट के बाद आज आप कैसा महसूस कर रहे हैं?"
+                },
+                {
+                    "text": "मैं ऑर्डर करना चाहूंगा",
+                    "pronunciation": "/mɛ̃ː ɔːɾɖəɾ kəɾnaː tʃaːɦuːŋɡaː/",
+                    "meaning": "I would like to order",
+                    "example": "मैं एक कॉफी ऑर्डर करना चाहूंगा, कृपया।"
+                },
+                {
+                    "text": "क्या समय हुआ है?",
+                    "pronunciation": "/kjaː səməj ɦuaː ɦɛː/",
+                    "meaning": "What time is it?",
+                    "example": "क्षमा करें, क्या समय हुआ है?"
+                },
+                {
+                    "text": "निकटतम स्टेशन कहाँ है?",
+                    "pronunciation": "/nɪkət̪əm sʈeːʃən kəɦãː ɦɛː/",
+                    "meaning": "Where is the nearest station?",
+                    "example": "क्या आप मुझे बता सकते हैं कि निकटतम स्टेशन कहाँ है?"
+                },
+                {
+                    "text": "मुझे कुछ मदद चाहिए",
+                    "pronunciation": "/mʊdʒeː kʊtʃ məd̪əd̪ tʃaːɦɪeː/",
+                    "meaning": "I need some help",
+                    "example": "मुझे इस समस्या में कुछ मदद चाहिए।"
+                }
+            ],
+            "de": [
+                {
+                    "text": "Wie fühlst du dich heute?",
+                    "pronunciation": "/viː fyːlst duː dɪç ˈhɔʏtə/",
+                    "meaning": "How are you feeling today?",
+                    "example": "Wie fühlst du dich heute nach dem Training?"
+                },
+                {
+                    "text": "Ich möchte bestellen",
+                    "pronunciation": "/ɪç ˈmœçtə bəˈʃtɛlən/",
+                    "meaning": "I would like to order",
+                    "example": "Ich möchte einen Kaffee bestellen, bitte."
+                },
+                {
+                    "text": "Wie spät ist es?",
+                    "pronunciation": "/viː ʃpɛːt ɪst ɛs/",
+                    "meaning": "What time is it?",
+                    "example": "Entschuldigung, wie spät ist es?"
+                },
+                {
+                    "text": "Wo ist der nächste Bahnhof?",
+                    "pronunciation": "/voː ɪst deːɐ̯ ˈnɛːçstə ˈbaːnhoːf/",
+                    "meaning": "Where is the nearest station?",
+                    "example": "Können Sie mir sagen, wo der nächste Bahnhof ist?"
+                },
+                {
+                    "text": "Ich brauche Hilfe",
+                    "pronunciation": "/ɪç ˈbʁaʊxə ˈhɪlfə/",
+                    "meaning": "I need help",
+                    "example": "Ich brauche Hilfe mit diesem Problem."
+                }
+            ],
+            "fr": [
+                {
+                    "text": "Comment vous sentez-vous aujourd'hui?",
+                    "pronunciation": "/kɔmɑ̃ vu sɑ̃te vu oʒuʁdɥi/",
+                    "meaning": "How are you feeling today?",
+                    "example": "Comment vous sentez-vous aujourd'hui après votre entraînement?"
+                },
+                {
+                    "text": "Je voudrais commander",
+                    "pronunciation": "/ʒə vudʁɛ kɔmɑ̃de/",
+                    "meaning": "I would like to order",
+                    "example": "Je voudrais commander un café, s'il vous plaît."
+                },
+                {
+                    "text": "Quelle heure est-il?",
+                    "pronunciation": "/kɛl œʁ ɛt il/",
+                    "meaning": "What time is it?",
+                    "example": "Excusez-moi, quelle heure est-il?"
+                },
+                {
+                    "text": "Où est la gare la plus proche?",
+                    "pronunciation": "/u ɛ la ɡaʁ la ply pʁɔʃ/",
+                    "meaning": "Where is the nearest station?",
+                    "example": "Pouvez-vous me dire où est la gare la plus proche?"
+                },
+                {
+                    "text": "J'ai besoin d'aide",
+                    "pronunciation": "/ʒe bəzwɛ̃ dɛd/",
+                    "meaning": "I need help",
+                    "example": "J'ai besoin d'aide avec ce problème."
+                }
+            ],
+            "ar": [
+                {
+                    "text": "كيف تشعر اليوم؟",
+                    "pronunciation": "/kajfa taʃʕur aljawm/",
+                    "meaning": "How are you feeling today?",
+                    "example": "كيف تشعر اليوم بعد التمرين؟"
+                },
+                {
+                    "text": "أود أن أطلب",
+                    "pronunciation": "/ʔuːd ʔan ʔatˤlub/",
+                    "meaning": "I would like to order",
+                    "example": "أود أن أطلب قهوة، من فضلك."
+                },
+                {
+                    "text": "كم الساعة؟",
+                    "pronunciation": "/kam asːaːʕa/",
+                    "meaning": "What time is it?",
+                    "example": "عذراً، كم الساعة؟"
+                },
+                {
+                    "text": "أين أقرب محطة؟",
+                    "pronunciation": "/ʔajn ʔaqrab maħatˤːa/",
+                    "meaning": "Where is the nearest station?",
+                    "example": "هل يمكنك أن تخبرني أين أقرب محطة؟"
+                },
+                {
+                    "text": "أحتاج إلى مساعدة",
+                    "pronunciation": "/ʔaħtaːdʒ ʔilaː musaːʕada/",
+                    "meaning": "I need help",
+                    "example": "أحتاج إلى مساعدة في هذه المشكلة."
+                }
+            ]
+        },
+        "advanced": {
+            "en": [
+                {
+                    "text": "Could you recommend a good restaurant nearby?",
+                    "pronunciation": "/kʊd juː ˌrekəˈmend ə ɡʊd ˈrestərɒnt ˈnɪərbaɪ/",
+                    "meaning": "Asking for restaurant recommendations",
+                    "example": "We're new in town, could you recommend a good restaurant nearby?"
+                },
+                {
+                    "text": "I'm looking forward to meeting you",
+                    "pronunciation": "/aɪm ˈlʊkɪŋ ˈfɔːwəd tə ˈmiːtɪŋ juː/",
+                    "meaning": "Expressing anticipation for a meeting",
+                    "example": "I'm looking forward to meeting you at the conference."
+                },
+                {
+                    "text": "What's your opinion on this matter?",
+                    "pronunciation": "/wɒts jɔːr əˈpɪnjən ɒn ðɪs ˈmætər/",
+                    "meaning": "Asking for someone's viewpoint",
+                    "example": "I'd like to hear your thoughts, what's your opinion on this matter?"
+                },
+                {
+                    "text": "Could you explain that in more detail?",
+                    "pronunciation": "/kʊd juː ɪkˈspleɪn ðæt ɪn mɔːr ˈdiːteɪl/",
+                    "meaning": "Requesting more detailed explanation",
+                    "example": "I didn't quite understand, could you explain that in more detail?"
+                },
+                {
+                    "text": "I appreciate your help with this",
+                    "pronunciation": "/aɪ əˈpriːʃieɪt jɔːr help wɪð ðɪs/",
+                    "meaning": "Expressing gratitude for assistance",
+                    "example": "Thank you for taking the time, I appreciate your help with this."
+                }
+            ],
+            "es": [
+                {
+                    "text": "¿Podrías recomendarme un buen restaurante cercano?",
+                    "pronunciation": "/poˈðɾias ɾekomendaɾme un βwen ɾestauˈɾante θeɾˈkano/",
+                    "meaning": "Could you recommend a good restaurant nearby?",
+                    "example": "Somos nuevos en la ciudad, ¿podrías recomendarme un buen restaurante cercano?"
+                },
+                {
+                    "text": "Tengo muchas ganas de conocerte",
+                    "pronunciation": "/ˈteŋɡo ˈmutʃas ˈɣanas de konoˈθeɾte/",
+                    "meaning": "I'm looking forward to meeting you",
+                    "example": "Tengo muchas ganas de conocerte en la conferencia."
+                },
+                {
+                    "text": "¿Cuál es tu opinión sobre este asunto?",
+                    "pronunciation": "/ˈkwal es tu opiˈnjon ˈsoβɾe ˈeste aˈsunto/",
+                    "meaning": "What's your opinion on this matter?",
+                    "example": "Me gustaría escuchar tus pensamientos, ¿cuál es tu opinión sobre este asunto?"
+                },
+                {
+                    "text": "¿Podrías explicar eso con más detalle?",
+                    "pronunciation": "/poˈðɾias ekspliˈkaɾ ˈeso kon mas deˈtaʎe/",
+                    "meaning": "Could you explain that in more detail?",
+                    "example": "No lo entendí bien, ¿podrías explicar eso con más detalle?"
+                },
+                {
+                    "text": "Aprecio tu ayuda con esto",
+                    "pronunciation": "/apɾeˈθjo tu aˈʝuða kon ˈesto/",
+                    "meaning": "I appreciate your help with this",
+                    "example": "Gracias por tomar el tiempo, aprecio tu ayuda con esto."
+                }
+            ],
+            "hi": [
+                {
+                    "text": "क्या आप पास के किसी अच्छे रेस्तरां की सिफारिश कर सकते हैं?",
+                    "pronunciation": "/kjaː aːp paːs keː kɪsiː ətʃtʃeː ɾɛstəɾaːŋ kiː sɪfaːɾɪʃ kəɾ səkteː ɦɛ̃ː/",
+                    "meaning": "Could you recommend a good restaurant nearby?",
+                    "example": "हम शहर में नए हैं, क्या आप पास के किसी अच्छे रेस्तरां की सिफारिश कर सकते हैं?"
+                },
+                {
+                    "text": "मैं आपसे मिलने के लिए उत्सुक हूँ",
+                    "pronunciation": "/mɛ̃ː aːpseː mɪlneː keː lɪeː ʊtsʊk ɦũː/",
+                    "meaning": "I'm looking forward to meeting you",
+                    "example": "मैं सम्मेलन में आपसे मिलने के लिए उत्सुक हूँ।"
+                },
+                {
+                    "text": "इस मामले पर आपकी क्या राय है?",
+                    "pronunciation": "/ɪs maːmleː pəɾ aːpkiː kjaː ɾaːj ɦɛː/",
+                    "meaning": "What's your opinion on this matter?",
+                    "example": "मैं आपके विचार सुनना चाहूंगा, इस मामले पर आपकी क्या राय है?"
+                },
+                {
+                    "text": "क्या आप इसे और विस्तार से समझा सकते हैं?",
+                    "pronunciation": "/kjaː aːp ɪseː ɔːɾ vɪstaːɾ seː səmədʒaː səkteː ɦɛ̃ː/",
+                    "meaning": "Could you explain that in more detail?",
+                    "example": "मैं इसे ठीक से नहीं समझ पाया, क्या आप इसे और विस्तार से समझा सकते हैं?"
+                },
+                {
+                    "text": "मैं इसके लिए आपकी मदद की सराहना करता हूँ",
+                    "pronunciation": "/mɛ̃ː ɪskeː lɪeː aːpkiː məd̪əd̪ kiː səraːɦnaː kəɾtaː ɦũː/",
+                    "meaning": "I appreciate your help with this",
+                    "example": "समय निकालने के लिए धन्यवाद, मैं इसके लिए आपकी मदद की सराहना करता हूँ।"
+                }
+            ],
+            "de": [
+                {
+                    "text": "Können Sie ein gutes Restaurant in der Nähe empfehlen?",
+                    "pronunciation": "/ˈkœnən ziː aɪn ˈɡuːtəs ʁɛstoˈʁɑ̃ː ɪn deːɐ̯ ˈnɛːə ɛmˈpfeːlən/",
+                    "meaning": "Could you recommend a good restaurant nearby?",
+                    "example": "Wir sind neu in der Stadt, können Sie ein gutes Restaurant in der Nähe empfehlen?"
+                },
+                {
+                    "text": "Ich freue mich darauf, Sie kennenzulernen",
+                    "pronunciation": "/ɪç ˈfʁɔʏə mɪç daˈʁaʊf ziː ˈkɛnənˌtsuːˌlɛʁnən/",
+                    "meaning": "I'm looking forward to meeting you",
+                    "example": "Ich freue mich darauf, Sie auf der Konferenz kennenzulernen."
+                },
+                {
+                    "text": "Was ist Ihre Meinung zu dieser Angelegenheit?",
+                    "pronunciation": "/vas ɪst ˈiːʁə ˈmaɪnʊŋ tsuː ˈdiːzɐ ˈanɡəˌleːɡn̩haɪt/",
+                    "meaning": "What's your opinion on this matter?",
+                    "example": "Ich würde gerne Ihre Gedanken hören, was ist Ihre Meinung zu dieser Angelegenheit?"
+                },
+                {
+                    "text": "Können Sie das genauer erklären?",
+                    "pronunciation": "/ˈkœnən ziː das ɡəˈnaʊɐ ɛɐ̯ˈklɛːʁən/",
+                    "meaning": "Could you explain that in more detail?",
+                    "example": "Ich habe es nicht ganz verstanden, können Sie das genauer erklären?"
+                },
+                {
+                    "text": "Ich schätze Ihre Hilfe sehr",
+                    "pronunciation": "/ɪç ˈʃɛtsə ˈiːʁə ˈhɪlfə zeːɐ̯/",
+                    "meaning": "I appreciate your help with this",
+                    "example": "Danke, dass Sie sich die Zeit genommen haben, ich schätze Ihre Hilfe sehr."
+                }
+            ],
+            "fr": [
+                {
+                    "text": "Pouvez-vous recommander un bon restaurant à proximité?",
+                    "pronunciation": "/puve vu ʁəkɔmɑ̃de œ̃ bɔ̃ ʁɛstɔʁɑ̃ a pʁɔksimite/",
+                    "meaning": "Could you recommend a good restaurant nearby?",
+                    "example": "Nous sommes nouveaux en ville, pouvez-vous recommander un bon restaurant à proximité?"
+                },
+                {
+                    "text": "J'ai hâte de vous rencontrer",
+                    "pronunciation": "/ʒe ʔat də vu ʁɑ̃kɔ̃tʁe/",
+                    "meaning": "I'm looking forward to meeting you",
+                    "example": "J'ai hâte de vous rencontrer à la conférence."
+                },
+                {
+                    "text": "Quelle est votre opinion sur cette question?",
+                    "pronunciation": "/kɛl ɛ vɔtʁ ɔpinjɔ̃ syʁ sɛt kɛstjɔ̃/",
+                    "meaning": "What's your opinion on this matter?",
+                    "example": "J'aimerais entendre vos pensées, quelle est votre opinion sur cette question?"
+                },
+                {
+                    "text": "Pouvez-vous expliquer cela plus en détail?",
+                    "pronunciation": "/puve vu ɛksplike səla ply ɑ̃ detaj/",
+                    "meaning": "Could you explain that in more detail?",
+                    "example": "Je n'ai pas bien compris, pouvez-vous expliquer cela plus en détail?"
+                },
+                {
+                    "text": "J'apprécie votre aide",
+                    "pronunciation": "/ʒapʁesj vɔtʁ ɛd/",
+                    "meaning": "I appreciate your help with this",
+                    "example": "Merci d'avoir pris le temps, j'apprécie votre aide."
+                }
+            ],
+            "ar": [
+                {
+                    "text": "هل يمكنك أن توصي بمطعم جيد قريب؟",
+                    "pronunciation": "/hal jumkinuka ʔan tuːsˤiː bimatˤʕam dʒajjid qariːb/",
+                    "meaning": "Could you recommend a good restaurant nearby?",
+                    "example": "نحن جدد في المدينة، هل يمكنك أن توصي بمطعم جيد قريب؟"
+                },
+                {
+                    "text": "أتطلع إلى مقابلتك",
+                    "pronunciation": "/ʔatˤtˤalaʕu ʔilaː muqaːbalatik/",
+                    "meaning": "I'm looking forward to meeting you",
+                    "example": "أتطلع إلى مقابلتك في المؤتمر."
+                },
+                {
+                    "text": "ما رأيك في هذا الأمر؟",
+                    "pronunciation": "/maː raʔjuka fiː haːðaː alʔamr/",
+                    "meaning": "What's your opinion on this matter?",
+                    "example": "أود أن أسمع أفكارك، ما رأيك في هذا الأمر؟"
+                },
+                {
+                    "text": "هل يمكنك شرح ذلك بتفصيل أكثر؟",
+                    "pronunciation": "/hal jumkinuka ʃarħ ðaːlik bitafsˤiːl ʔakθar/",
+                    "meaning": "Could you explain that in more detail?",
+                    "example": "لم أفهم جيداً، هل يمكنك شرح ذلك بتفصيل أكثر؟"
+                },
+                {
+                    "text": "أقدر مساعدتك في هذا",
+                    "pronunciation": "/ʔuqaðdˤiru musaːʕadatak fiː haːðaː/",
+                    "meaning": "I appreciate your help with this",
+                    "example": "شكراً على وقتك، أقدر مساعدتك في هذا."
+                }
+            ]
+        }
+    }
+} 

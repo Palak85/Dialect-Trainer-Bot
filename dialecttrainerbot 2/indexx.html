@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialect Trainer Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Authentication Section -->
+        <div class="auth-container" id="auth-section">
+            <div class="trainer-icon mb-4">
+                <i class="fas fa-robot text-6xl text-pink-500"></i>
+            </div>
+            <h2 class="text-4xl font-bold mb-2 text-center">Dialect Trainer Bot</h2>
+            <p class="text-xl text-gray-600 mb-6 text-center">Master languages with AI-powered feedback and personalized learning!</p>
+            
+            <div class="auth-toggle mb-6">
+                <button class="toggle-btn active" id="login-toggle">Login</button>
+                <button class="toggle-btn" id="signup-toggle">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="auth-form" id="login-form">
+                <div class="mb-6 relative">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" class="w-full p-4 pl-12 rounded-lg border text-xl" id="username-input">
+                    </div>
+                </div>
+                <div class="mb-6 relative">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="w-full p-4 pl-12 rounded-lg border text-xl" id="password-input">
+                        <button class="password-toggle" id="password-toggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-full mb-4 text-xl" id="login-btn">Login</button>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="auth-form hidden" id="signup-form">
+                <div class="mb-6 relative">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" class="w-full p-4 pl-12 rounded-lg border text-xl" id="signup-username">
+                    </div>
+                </div>
+                <div class="mb-6 relative">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="w-full p-4 pl-12 rounded-lg border text-xl" id="signup-password">
+                        <button class="password-toggle" id="signup-password-toggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-6 relative">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" class="w-full p-4 pl-12 rounded-lg border text-xl" id="confirm-password">
+                        <button class="password-toggle" id="confirm-password-toggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-full mb-4 text-xl" id="register-btn">Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div class="dashboard hidden" id="dashboard-section">
+            <div class="dashboard-header">
+                <div class="header-buttons">
+                    <button class="enrolled-courses-btn" id="enrolled-courses-btn">
+                        <i class="fas fa-graduation-cap mr-2"></i>My Courses
+                    </button>
+                    <button class="logout-btn" id="logout-btn">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    </button>
+                </div>
+            </div>
+
+            <div class="welcome-message mb-8 text-center">
+                <h2 class="text-3xl font-bold mb-2" id="welcome-username">Welcome, User!</h2>
+                <p class="text-xl text-gray-600" id="welcome-quote">Ready for today's learning? Let's get started!</p>
+            </div>
+
+            <!-- Enrolled Courses Section -->
+            <div class="enrolled-courses hidden" id="enrolled-courses-section">
+                <div class="enrolled-courses-header">
+                    <button class="back-btn" id="back-btn">
+                        <i class="fas fa-arrow-left mr-2"></i>Back to Dashboard
+                    </button>
+                    <h2 class="text-2xl font-bold">Your Progress in Enrolled Courses</h2>
+                </div>
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Course cards will be dynamically added here -->
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="course-info">
+                                <h3 class="course-title">Course Title</h3>
+                                <p class="course-level">Level</p>
+                            </div>
+                            <button class="delete-course-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-text">Progress: 0%</div>
+                            <div class="course-progress-bar">
+                                <div class="course-progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <button class="continue-btn">Continue Learning</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="current-progress">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold">Your Current Progress</h2>
+                    <div class="progress-text">0% Complete</div>
+                </div>
+                
+                <div class="progress-bar mt-4">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <h3 class="language-selection-heading">Select Your Language</h3>
+            <div class="language-grid">
+                <button class="btn language-btn" data-lang="en">
+                    <i class="fas fa-flag-usa"></i> English
+                </button>
+                <button class="btn language-btn" data-lang="hi">
+                    <i class="fas fa-flag"></i> Hindi
+                </button>
+                <button class="btn language-btn" data-lang="es">
+                    <i class="fas fa-flag"></i> Spanish
+                </button>
+                <button class="btn language-btn" data-lang="de">
+                    <i class="fas fa-flag"></i> German
+                </button>
+                <button class="btn language-btn" data-lang="fr">
+                    <i class="fas fa-flag"></i> French
+                </button>
+                <button class="btn language-btn" data-lang="ar">
+                    <i class="fas fa-flag"></i> Arabic
+                </button>
+            </div>
+
+            <!-- Level Selection Section -->
+            <div class="level-container hidden" id="level-section">
+                <h2 class="level-title">Select Your Level</h2>
+                <div class="level-buttons">
+                    <button class="btn btn-primary level-btn" data-level="beginner">
+                        <i class="fas fa-seedling mr-2"></i>Beginner
+                    </button>
+                    <button class="btn btn-primary level-btn" data-level="intermediate">
+                        <i class="fas fa-leaf mr-2"></i>Intermediate
+                    </button>
+                    <button class="btn btn-primary level-btn" data-level="advanced">
+                        <i class="fas fa-tree mr-2"></i>Advanced
+                    </button>
+                </div>
+            </div>
+
+            <div class="word-display hidden" id="practice-section">
+                <div class="flex justify-between items-center">
+                    <button class="btn btn-secondary" id="prev-word"><i class="fas fa-arrow-left"></i></button>
+                    <div class="text-3xl font-bold" id="current-word">Hello</div>
+                    <button class="btn btn-secondary" id="next-word"><i class="fas fa-arrow-right"></i></button>
+                </div>
+                
+                <div class="mt-4">
+                    <p class="text-lg"><strong>Pronunciation:</strong> <span id="pronunciation">/həˈləʊ/</span></p>
+                    <p class="text-lg"><strong>Meaning:</strong> <span id="meaning">A greeting</span></p>
+                    <p class="text-lg"><strong>Example:</strong> <span id="example">Hello, how are you today?</span></p>
+                </div>
+
+                <div class="flex justify-center mt-4">
+                    <button class="listen-btn" id="listen-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+
+                <div class="recording-controls">
+                    <button class="btn btn-record" id="record-btn">
+                        <i class="fas fa-microphone mr-2"></i>Start Recording
+                    </button>
+                    <div class="listening-indicator hidden" id="listening-indicator">
+                        <i class="fas fa-circle-notch fa-spin mr-2"></i>Listening...
+                    </div>
+                </div>
+
+                <div class="feedback hidden" id="feedback">
+                    Great job! 95% accuracy
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
